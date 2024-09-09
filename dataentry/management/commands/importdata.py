@@ -5,7 +5,8 @@ from dataentry.models import *
 
 
 class Command(BaseCommand):
-    help = 'Import data from CSV File'
+
+    help = 'Import data from CSV File' #proposed commed - python manage.py file_path model_name
 
     def add_arguments(self,parser):
         parser.add_argument('file_path',type=str,help='specifies file path')
